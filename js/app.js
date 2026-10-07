@@ -20,3 +20,9 @@ console.log(typeof title);
 console.log(typeof enrolled);
 console.log(typeof slogan);
 console.log(typeof course);
+
+console.log(`W mojej opinii ten ${title} jest ${enrolled}/10.`); //fajny ten sposób, ciekawe, że człowiek codziennie dowiaduje się jak to sobie usprawnić życie
+
+console.log("Za to inny był -"+enrolled+"/10, bardzo mi się nie podobał");
+
+console.log("Natomiast ${enrolled} razy bardziej wolę programowanie w C#");
