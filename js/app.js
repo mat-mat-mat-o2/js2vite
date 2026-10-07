@@ -8,11 +8,18 @@
 // console.log(typeof []);
 // console.log(typeof {});
 
+function makeHeader()
+{
+    console.log(title);
+    console.log(`Zajęte ${enrolled}/${seats} miejsc`);
+    console.log(slogan);
+}
+
 const seats=12;
 const title="Kurs JavaScript";
 
-let enrolled=12;
-let slogan;
+let enrolled=10;
+let slogan="Zapisz się na nasz Kurs!";
 let course;
 let warunek=1;
 
@@ -57,3 +64,5 @@ switch(warunek)
 warunek=3;
 
 console.log((warunek==1) ? title : ((warunek==2) ? "Kurs JavaScript" : "Kurs w przygotowaniu"));
+
+makeHeader();
