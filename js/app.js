@@ -14,6 +14,7 @@ const title="Kurs JavaScript";
 let enrolled=12;
 let slogan;
 let course;
+let warunek=1;
 
 console.log(typeof seats);
 console.log(typeof title);
@@ -26,3 +27,33 @@ console.log(`W mojej opinii ten ${title} jest ${enrolled}/10.`); //fajny ten spo
 console.log("Za to inny był -"+enrolled+"/10, bardzo mi się nie podobał");
 
 console.log("Natomiast ${enrolled} razy bardziej wolę programowanie w C#");
+
+if(warunek==1)
+{
+    console.log(title);
+} else if(warunek==2)
+{
+    console.log("Kurs TypeScript");
+} else {
+    console.log("Kurs w przygotowaniu");
+}
+
+warunek=2;
+
+switch(warunek)
+{
+    case 1:
+        console.log(title);
+        break;
+
+    case 2:
+        console.log("Kurs TypeScript");
+        break;
+
+    default:
+        console.log("Kurs w przygotowaniu");
+}
+
+warunek=3;
+
+console.log((warunek==1) ? title : ((warunek==2) ? "Kurs JavaScript" : "Kurs w przygotowaniu"));
